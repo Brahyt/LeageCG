@@ -1,3 +1,4 @@
 import 'jquery'
 import 'popper.js'
-//import 'bootstrap'
+import 'bootstrap'
+console.log("HELLO UNICORN")

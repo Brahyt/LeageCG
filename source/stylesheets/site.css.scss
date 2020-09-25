@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'bootstrap';
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
@@ -18,7 +19,7 @@ body {
 }
 
 .blurbs {
-  background-color: $site-color-2;
+  background-color: $site-color-1;
   border: 1px solid black;
   display: flex;
   flex-direction: row;
