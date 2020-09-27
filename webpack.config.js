@@ -6,11 +6,7 @@ module.exports = {
   mode: 'development',
   entry: {
     site: ['./source/javascripts/site.js'],
-    style: ['./source/stylesheets/site.css.scss'],
-  },
-  output: {
-    path: path.resolve(__dirname, '.tmp/dist'),
-    filename: '[name].min.js',
+    //    style: ['./source/stylesheets/site.css.scss'],
   },
   module: {
     rules: [
@@ -21,8 +17,26 @@ module.exports = {
           'css-loader',
           'sass-loader',
         ],
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
       }
     ]
   },
-  plugins: [new MiniCssExtractPlugin()],
+  output: {
+    path: path.resolve(__dirname, '.tmp/dist'),
+    filename: 'site.js',
+  },
+  plugins: [new MiniCssExtractPlugin({
+    filename: 'site.css'
+  })],
 };
