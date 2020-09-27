@@ -1,47 +1,35 @@
 @import 'variables';
-@import 'bootstrap';
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  text-align: center;
+  font-family: "Candara", sans-serif;
   padding: 0px;
   margin: 0px;
+  color: $black;
+}
+
+a {
+  color: $site-color-1;
+  &:visited {
+    color: $site-color-1;
+  }
+  &:hover {
+    color: $site-color-2;
+  }
 }
 
 .application {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
-  justify-content: center;
 }
 
 .blurbs {
-  background-color: $site-color-1;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: row;
   min-height: 150px;
-  justify-content: space-around;
-}
-
-.blurb {
-  min-width: 25%;
-}
-
-.tagline_container {
-  display: flex;
-  flex-direction: row;
-}
-
-.tagline {
-  min-height: 200px;
-  width: 50%;
+  .blurb-link {
+    display: block;
+  }
 }
 
 
-.logo {
-  width: 70%;
+.split-jumbo {
+  background-color: $grey;
 }

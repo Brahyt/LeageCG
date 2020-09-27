@@ -1,0 +1,15 @@
+blurbs:
+- title: 'Meet New Players'
+  description: 'Meet new players playing LotR, Marvel Champions and other LCG games.'
+- title: 'Join Us Virtually'
+  description: 'Play with people virtually through Table Top Simulator or Octgn.'
+  links:
+    - url: "https://store.steampowered.com/app/286160/Tabletop_Simulator/"
+      text: "Table Top Simulator"
+    - url: "https://www.octgn.net/"
+      text: "Octgn"
+- title: 'Free Event'
+  description: 'The event costs nothing just head over to Discord to register.'
+tag:
+  - title: 'Con Of The Rings CANCELED'
+    description: 'We have decided to move the festivities online since the announcment to cancel con of the rings'

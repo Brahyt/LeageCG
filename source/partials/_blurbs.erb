@@ -1,0 +1,19 @@
+<% return unless data.content.blurbs %>
+
+<% content_tag :div, class: 'row p-5' do %>
+  <% data.content.blurbs.each do |blurb| %>
+    <% content_tag :div, class: 'col-sm' do %>
+      <%= content_tag :h3, blurb.title %>
+      <%= content_tag :p, blurb.description %>
+      <% if blurb.links.present? %>
+        <% content_tag :ul do %>
+          <% blurb.links.each do |link| %>
+            <% content_tag :li do %>
+              <%= link_to link.text, link.url  %>
+            <% end %>
+          <% end %>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>

@@ -1,0 +1,28 @@
+{
+  "name": "LeagueCG",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Brahyt/LeageCG.git",
+  "author": "Daniel Bright <brahyt@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "css-loader": "^4.3.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "jquery": "^3.5.1",
+    "mini-css-extract-plugin": "^0.11.2",
+    "node-sass": "^4.14.1",
+    "popper.js": "^1.16.1",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-loader": "^4.0.2",
+    "sass-loader": "^10.0.2",
+    "webpack": "^4.44.2"
+  },
+  "scripts": {
+    "start": "webpack --watch --progress --color",
+    "build": "webpack --bail -p"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
+  }
+}
