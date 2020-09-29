@@ -31,6 +31,7 @@
     "build": "webpack --bail -p"
   },
   "devDependencies": {
+    "rails-erb-loader": "^5.5.2",
     "webpack-cli": "^3.3.12"
   }
 }

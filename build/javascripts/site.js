@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var calendar = new Calendar(calendarEl, {
     plugins: [dayGridPlugin, googleCalendarPlugin, timeGridPlugin, listPlugin, bootstrapPlugin],
-    googleCalendarApiKey: process.env.CAL_API,
+    googleCalendarApiKey: "AIzaSyCkYwlgQh425sDEAWkkh0JuPr61Qmfrhp4",
     plugins: [bootstrapPlugin, googleCalendarPlugin, dayGridPlugin],
     themeSystem: 'bootstrap',
     events: {

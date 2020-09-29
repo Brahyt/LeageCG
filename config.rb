@@ -20,8 +20,14 @@ activate :external_pipeline,
  
 # Dev environment
 configure :development do
- config[:css_dir] = ".tmp/dist"
- config[:js_dir] = ".tmp/dist"
+  config[:css_dir] = ".tmp/dist"
+  config[:js_dir] = ".tmp/dist"
+  config[:api_key] = ENV['CAL_API']
+  config[:unicorn] = 'UNICORN'
+end
+configure :build do
+  config[:api_key] = ENV['CAL_API']
+  config[:unicorn] = 'UNICORN'
 end
 
 # Layouts
@@ -58,6 +64,7 @@ page '/*.txt', layout: false
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
+
 
 # configure :build do
 #   activate :minify_css
