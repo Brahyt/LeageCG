@@ -13,8 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var calendar = new Calendar(calendarEl, {
     plugins: [dayGridPlugin, googleCalendarPlugin, timeGridPlugin, listPlugin, bootstrapPlugin],
-    googleCalendarApiKey: process.env.CAL_API,
-    plugins: [bootstrapPlugin, googleCalendarPlugin, dayGridPlugin],
+    googleCalendarApiKey: "AIzaSyCkYwlgQh425sDEAWkkh0JuPr61Qmfrhp4",
+    plugins: [bootstrapPlugin, googleCalendarPlugin, dayGridPlugin, timeGridPlugin],
+    initialView: 'timeGridWeek',
     themeSystem: 'bootstrap',
     events: {
       googleCalendarId: 'league8190@gmail.com'
